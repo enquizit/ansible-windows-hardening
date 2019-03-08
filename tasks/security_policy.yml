@@ -10,7 +10,7 @@
 
 - name: create security policy on host
   win_template:
-    src: security_policy.inf.yml
+    src: security_policy.inf.j2
     dest: "{{win_security_policy_template_location}}\\ansible_windows_hardening_security_policy.inf"
   register: security_policy
 

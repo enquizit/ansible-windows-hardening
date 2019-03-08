@@ -19,6 +19,8 @@
     name: "DisableOSUpgrade"
     data: "1"
     type: dword
+  tags:
+    - updates
 
 - name: Disable indexing encrypted files | disable-index-encrypted-files
   win_regedit:
